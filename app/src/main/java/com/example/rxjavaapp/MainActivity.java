@@ -24,14 +24,14 @@ import java.security.NoSuchAlgorithmException;
 public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL = "https://openapi.aktifbank.com.tr/api/dev/bill-payment/";
-    private static final String CLIENT_ID = "f4d5239e0de729e7de80554f6e2452bd";
+    private static final String CLIENT_ID = "client_id";
     private Disposable disposable;
     private AktifBankAPI aktifBankAPI; // aktifBankAPI değişkenini burada tanımlayalım
 
     // API Interface'i tanımla
     interface AktifBankAPI {
         @Headers({
-                "X-IBM-Client-Id: f4d5239e0de729e7de80554f6e2452bd",
+                "X-IBM-Client-Id: client_id",
                 "Content-Type: application/json",
                 "Accept: application/json"
         })
